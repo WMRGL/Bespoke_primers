@@ -1,0 +1,113 @@
+.clickable {
+    cursor: pointer;
+}
+.btn-sq-lg {
+    width: 150px;
+    height: 150px;
+}
+th, td {
+    text-align: center;
+}
+td.details-control {
+    background: url('http://www.datatables.net/examples/resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('http://www.datatables.net/examples/resources/details_close.png') no-repeat center center;
+}
+tr.selected {
+    background-color:#aab7d1 !important;
+}
+.hide {
+    display: none;
+}
+header.home-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+header.home-header .intro-text .name {
+    font-size: 2em;
+    display: block;
+}
+header.home-header .intro-text .summary-text {
+    font-size: 1.25em;
+}
+.panel-footer.panel-custom {
+    background: white;
+    border: 0px;
+}
+#igvDiv {
+    padding:5px;
+    border:1px solid lightgray;
+}
+p.heading {
+    font-size: 2em;
+}
+p.sub-heading {
+    font-size: 1.25em;
+}
+form.gene-form {
+    margin-bottom: 10px;
+}
+p.text-divide {
+    font-size: 1em;
+    font-weight: 700;
+}
+div.page-panel {
+    height: 160px;
+}
+a.page-button {
+    float: right;
+}
+i.db-icon {
+    font-size:40px;
+    color: #425563;
+}
+div.login-canvas {
+    margin-top:50px;
+}
+div.login-body {
+    padding-top:30px;
+}
+div.login-input {
+    margin-bottom: 25px;
+}
+a.download {
+    float: right;
+}
+p.order-date {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p.zero-order-text {
+    margin-top: 20px;
+}
+a.cancel {
+    color: inherit;
+    text-decoration: none;
+}
+td.status {
+    text-align: center;
+    font-weight: bold;
+}
+td.panel-text, th.panel-text {
+    text-align: left;
+}
+div.archive-header {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#igv_for_loc {
+    margin-bottom: 20px;
+}
+button.order {
+    float: right;
+}
+div.alert {
+    margin-top: 20px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #768692;
+    color: white;
+}
