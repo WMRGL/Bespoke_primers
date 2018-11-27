@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% block title %}
+    Not Found - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h1>Error</h1>
+    <p>Sorry, no RefSeq NG number could be found for the gene symbol: {{ gene_symbol }}.</p>
+    <p>Please consider using the design by single target functionality instead.</p>
+{% endblock content %}

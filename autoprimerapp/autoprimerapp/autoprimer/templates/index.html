@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% block title %}
+    Home - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+
+
+<!-- Panels for each page -->
+<h1 class="display-4">Automated Primer Design</h1>
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Whole Gene</div>
+                </div>
+                <div class="panel-body page-panel">
+                    <p>Design primers to cover all exons of a given gene.</p>
+                </div>
+                <div class="panel-footer panel-custom clearfix">
+                    <a href="{% url 'design-by-symbol' %}" class="btn btn-primary page-button">Go</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Single Target</div>
+                </div>
+                <div class="panel-body page-panel">
+                    <p>Design primers for a single target region.</p>
+                </div>
+                <div class="panel-footer panel-custom clearfix">
+                    <a href="{% url 'design-by-coordinate' %}" class="btn btn-primary page-button">Go</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">NIPD Bespoke Target</div>
+                </div>
+                <div class="panel-body page-panel">
+                    <p>Design primers for a single NIPD Bespoke target region.</p>
+                </div>
+                <div class="panel-footer panel-custom clearfix">
+                    <a href="{% url 'design-for-nipd-bespoke-targets' %}" class="btn btn-primary page-button">Go</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock content %}

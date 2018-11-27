@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load render_table from django_tables2 %}
+{% block title %}
+    Results - {{ block.super }}
+{% endblock title %}
+
+
+{% block content %}
+    <h1>Whole Gene Results</h1>
+    <div style="text-align:right">
+        <p><a href="{{ gene }}.csv">Download results</a> | <a href="{{ gene }}.bed">Download bed file</a></p>
+    </div>
+    <p><b>Reference genome:</b> {{ genome_build }}</p>
+    <p><b>Gene name:</b> {{ gene }}</p>
+    <p><b>Refseq ID:</b> {{ refseq_id }}</p>
+    <p><b>Chromosome:</b> {{ chromosome }}</p>
+    <p><b>Genomic coords:</b> {{ refseq_coord_start }}-{{ refseq_coord_stop }}</p>
+    {% render_table results %}
+{% endblock content %}
+
+
