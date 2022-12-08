@@ -1,5 +1,5 @@
 biopython==1.68
-certifi==2018.4.16
+certifi==2022.12.7
 chardet==3.0.4
 Cython==0.25.2
 Django==1.9.6
